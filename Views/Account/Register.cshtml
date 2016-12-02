@@ -7,7 +7,7 @@
 
 @model RegisterViewModel
 
-<h2>Register a new user</h2>
+<h2>Register as an Admin</h2>
 <p>passwords requires at least six characters, a capital letter, a digit, and a special character</p>
 <hr />
 @using (Html.BeginForm("Register", "Account", FormMethod.Post))
@@ -21,5 +21,5 @@
     @Html.LabelFor(m => m.ConfirmPassword)
     @Html.PasswordFor(m => m.ConfirmPassword)
 
-    <input type="submit" value="Register" />
+    <input type="submit" value="Register" class="btn btn-info" />
 }
