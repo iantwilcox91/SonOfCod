@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Newsletter</h1>
+<p>vvv list of news posts vvv</p>
+
+<h3>The newsletter page will welcome visitors, and allow them to sign up for the company newsletter. The form for sign up will only need to collect an email address, but should include other optional information. (think about what kind of info a seafood company might want?)</h3>
+<h4>An admin visiting this page will also have access to view the current mailing list. You can choose how they access this list, it could appear on the page, on a new page, or in a modal, but it should not be visible to any anonymous users.</h4>
+
+<hr />
+<p>if anon user:</p>
+@*@using (Html.BeginForm())
+{
+    @Html.LabelFor(m => m.Email)
+    @Html.TextBoxFor(m => m.Email)
+
+    <input type="submit" value="Sign up for newsletters" class="btn btn-info" />
+}*@
+<p>form for emails</p>
+
+<hr />
+<p>if logged in as admin:</p>
+<p>mailing list:</p>
+<ul>
+    <li>emails</li>
+    <li>emails</li>
+    <li>emails</li>
+    <li>emails</li>
+</ul>
